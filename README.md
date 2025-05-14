@@ -1,12 +1,50 @@
-# React + Vite
+# UserCard Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+UserCard Manager is a responsive React application that displays a list of users in a card-based layout using Bootstrap. Users are visually organized with profile pictures, roles highlighted by colored badges, and personal information. It includes a real-time search feature that filters users by email and displays results dynamically.
 
-Currently, two official plugins are available:
+## 🔍 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📇 User cards with image, role, email, phone, and birth date
+- 🎨 Circular profile images styled using Bootstrap
+- 🔴🟢🟡 Role-based badge colors (admin, user, moderator)
+- 🔎 Live search by email address
+- 🔁 Reset functionality to show all users again
+- ⚙️ Component-based structure with props and state management
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Bootstrap 5
+- JavaScript (ES6+)
+
+## 📁 Folder Structure
+
+src/
+├── components/
+│ ├── Users.jsx # Parent component handling the list and search
+│ └── UsersCard.jsx # Individual user card component
+├── utils/
+│ └── data.js # Mock users data
+├── App.js
+└── index.js
+
+bash
+Copy
+Edit
+
+## 🛠️ How to Run Locally
+
+1. Clone the repository:
+   git clone https://github.com/yourusername/usercard-manager.git
+   cd usercard-manager
+
+2. Install dependencies:
+   npm install
+   Start the development server:
+   npm start
+   Open http://localhost:3000 in your browser.
+
+📸 Screenshots
+Default View	Search Filtered
+
+Made with ❤️ using React and Bootstrap.
